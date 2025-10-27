@@ -1,8 +1,3 @@
-/**
- * SPA handling + dynamic stylesheets
- */
-
-
 document.querySelectorAll('nav > ul > li > a').forEach(link => {
     link.addEventListener('click', function(event){
         event.preventDefault();
@@ -38,9 +33,3 @@ document.querySelectorAll('nav > ul > li > a').forEach(link => {
 
     });
 })
-
-// // --- Optional: initialize first page on load ---
-// document.addEventListener('DOMContentLoaded', () => {
-//     const firstNav = document.querySelector('nav > ul > li > a');
-//     if (firstNav) firstNav.click(); // triggers SPA logic for first page
-// });
