@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single page application</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/one.css" id="css-one" disabled>
+    <link rel="stylesheet" href="css/two.css" id="css-two" disabled>
+    <link rel="stylesheet" href="css/three.css" id="css-three" disabled>
+    <script src="js/script.js" async></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Single page application
+        </h1>
+        <h2>
+            Using modular styles and practising enable/disable html elements and css stylesheets.
+        </h2>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" data-target="section1" data-style="css-one" title="page one">Page one</a>
+            </li>
+            <li>
+                <a href="#" data-target="section2" data-style="css-two"  title="page two">Page two</a>
+            </li>
+            <li>
+                <a href="#" data-target="section3" data-style="css-three"  title="page three">Page three</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main">
+        <section id="section1">One</section>
+        <section id="section2" class="hidden">Two</section>
+        <section id="section3" class="hidden">Three</section>
+        <!-- <button id="load-css">load new css</button> -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    background-color: antiquewhite;
+}
+
+.hidden{
+    display: none;
+}
+
+.selected{
+    font-weight: bold;
+    color: red;
+}
